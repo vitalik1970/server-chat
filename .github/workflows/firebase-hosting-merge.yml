@@ -13,9 +13,9 @@ jobs:
       - uses: actions/checkout@v4
       - run: npm install
       - run: npm run build
-      - run: react-scripts start
-      # - run: npm install -g serve
-      # - run: serve -s build
+      # - run: react-scripts start
+      - run: npm install -g serve
+      - run: serve -s build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
