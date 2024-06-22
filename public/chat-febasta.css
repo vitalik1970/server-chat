@@ -1,0 +1,85 @@
+
+body {
+  background-color: #999;
+  background-image: url('/img/purpose.jpg');
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;  
+  width: 100vw; 
+  height: 100vh;
+}
+.bone {
+    width: 100%;
+    max-width: 1400;
+    margin: 0 auto;
+    padding: 0 24px;
+  color: #fff;
+ 
+  
+  }
+.feedbackform {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+  }
+  .feedbackform:hover {  
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; 
+  }
+  label {
+    color: #fff;
+    margin-top: 20px;
+    font-family: 'Futura PT', sans-serif; 
+    font-size: 16px;
+  }
+  
+.feedback__form {
+    /* color: #5e5e5e; */
+    color: #fff;
+    padding: 5px;
+    margin-top: 5px;
+    background: none;
+    border-bottom: 1px solid #fff !important;
+    resize: none;
+    border: none;
+  }
+  ::-webkit-input-placeholder { /* Для браузеров, основанных на WebKit, таких как Chrome и Safari */
+    color: #fff; /* Цвет placeholder */
+  }
+  
+  :-moz-placeholder { /* Для Firefox 18- */
+    color: #fff; /* Цвет placeholder */
+  }
+  
+  ::-moz-placeholder { /* Для Firefox 19+ */
+    color: #fff; /* Цвет placeholder */
+  }
+  
+  :-ms-input-placeholder { /* Для Internet Explorer */
+    color: #fff; /* Цвет placeholder */
+  }
+  .button__form {
+        padding: 0 22px;
+        color: #fff;
+        display: inline-block;
+        font-size: 13px;
+        line-height: 43px;
+        letter-spacing: 1.3px;
+        -webkit-border-radius: 22px;
+        border-radius: 22px;
+        border: 1px solid #fff;
+        min-width: 228px;
+        -webkit-transition: all .4s;
+        -o-transition: all .4s;
+        transition: all .4s;
+        cursor: pointer;
+        text-transform: uppercase;
+        background-color: transparent;
+        position: relative;
+        margin-top: 25px;
+  }
+  .button__form:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease; 
+  }
