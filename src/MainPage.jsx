@@ -8,6 +8,9 @@ const Chat = () => {
   const [inputValue, setInputValue] = useState('');
   const [username, setUsername] = useState('');
   const socketRef = useRef();
+ console.log( username, 'username');
+console.log( messages, 'messages');
+console.log(inputValue, 'inputValue');
 
   useEffect(() => {
     // Подключение к сокету
@@ -50,7 +53,7 @@ const Chat = () => {
       <input type="text" id="username"  placeholder="NAME*" className='feedback__form' name="name"  autoComplete="off" value={username} onChange={(e) => setUsername(e.target.value)}/>
 
       <label htmlFor="message"></label>
-      <textarea id="input" placeholder="MESSAGE*" className='feedback__form'  name="message" autoComplete="off" value={inputValue} onChange={(e) => setUsername(e.target.value)}></textarea>
+      <textarea id="input" placeholder="MESSAGE*" className='feedback__form'  name="message" autoComplete="off" value={inputValue} onChange={(e) => setInputValue(e.target.value)}></textarea>
 
       <button className="button__form" disabled type="submit">
         SEND
